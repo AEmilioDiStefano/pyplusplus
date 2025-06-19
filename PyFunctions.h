@@ -1,5 +1,5 @@
-#ifndef REMEMBERER_H
-#define REMEMBERER_H
+#ifndef PYFUNCTIONS_H
+#define PYFUNCTIONS_H
 
 #include <iostream>
 
