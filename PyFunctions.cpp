@@ -25,7 +25,8 @@ std::string PyFunctions::capitalize(std:: string str)
   return result;
 }
 
-std::vector<std::string> PyFunctions::readlines(std::string& file_name) {
+std::vector<std::string> PyFunctions::readlines(std::string& file_name) 
+{
     
   std::ifstream input_file(file_name);
   if (!input_file.is_open()) {
@@ -48,7 +49,8 @@ std::vector<std::string> PyFunctions::readlines(std::string& file_name) {
 
 // This function acts identically to the word 'in' in Python.  It checks
 // if a string contains a substring, or if string_a is in string_b.
-bool PyFunctions::a_is_in_b(std::string string_a, std::string string_b) {
+bool PyFunctions::a_is_in_b(std::string string_a, std::string string_b) 
+{
   size_t found = string_b.find(string_a);
 
   if (found != std::string::npos) {
@@ -58,7 +60,8 @@ bool PyFunctions::a_is_in_b(std::string string_a, std::string string_b) {
   }
 }
 
-void PyFunctions::writeStringToFile(std::string string_line, std::string& file_name) {
+void PyFunctions::writeStringToFile(std::string string_line, std::string& file_name) 
+{
   std::ofstream outputFile;
 
   // Open the file in append mode. This ensures that new data is written 
