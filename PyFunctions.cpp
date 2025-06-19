@@ -1,4 +1,29 @@
 #include <iostream>
+#include <PyFunctions.h>
+
+std::string PyFunctions::capitalize(std:: string str) 
+{
+  
+  // Return an empty string if the uinput string is empty.
+  if (str.empty()) 
+  {
+    return ""; 
+  }
+
+  // Modify a copy of the parameter.
+  std::string result = str; 
+
+  // Capitalize the first character of the copied parameter string.
+  result[0] = std::toupper(result[0]);
+
+  // Convert all subsequent characters to lowercase.
+  for (size_t i = 1; i < result.length(); ++i) 
+  {
+      result[i] = std::tolower(result[i]);
+  }
+
+  return result;
+}
 
 std::vector<std::string> PyFunctions::readlines(std::string& file_name) {
     
@@ -24,7 +49,7 @@ std::vector<std::string> PyFunctions::readlines(std::string& file_name) {
 
 // This function acts identically to the word 'in' in Python.  It checks
 // if a string contains a substring, or if string_a is in string_b.
-bool Rememberer::a_is_in_b(std::string string_a, std::string string_b) {
+bool PyFunctions::a_is_in_b(std::string string_a, std::string string_b) {
   size_t found = string_b.find(string_a);
 
   if (found != std::string::npos) {
@@ -34,7 +59,7 @@ bool Rememberer::a_is_in_b(std::string string_a, std::string string_b) {
   }
 }
 
-std::vector<std::string> Rememberer::readlines(std::string& file_name) {
+std::vector<std::string> PyFunctions::readlines(std::string& file_name) {
     
   std::ifstream input_file(file_name);
   if (!input_file.is_open()) {
@@ -55,7 +80,7 @@ std::vector<std::string> Rememberer::readlines(std::string& file_name) {
 
 }
 
-void Rememberer::writeStringToFile(std::string string_line, std::string& file_name) {
+void PyFunctions::writeStringToFile(std::string string_line, std::string& file_name) {
   std::ofstream outputFile;
 
   // Open the file in append mode. This ensures that new data is written 
