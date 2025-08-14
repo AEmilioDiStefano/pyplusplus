@@ -4,7 +4,7 @@
 std::string PyFunctions::capitalize(std:: string str) 
 {
   
-  // Return an empty string if the uinput string is empty.
+  // Return an empty string if the input string is empty.
   if (str.empty()) 
   {
     return ""; 
