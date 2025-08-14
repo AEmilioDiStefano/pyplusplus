@@ -2,6 +2,6 @@
 
 The PyPlusPlus library was created to facilitate the C++ learning process for Python programmers by mimicing common functions in Python for use in C++ programs.
 
-Use this as training wheels, but not as a crutch.  In other words, use this as you start getting comfortable but don't let anyone see using it.  By the time you have gotten more comfortable coding in C++ and start writing programs in a professional setting, you should be writing your own custom functions for these simple purposes rather than depending on this library.
+This library is not meant to be used as a crutch for Python programmers.  Use this library as training wheels - use it to learn how to ride, but get rid of it as soon as you feel comfortable riding on your own.  By the time you have gotten more comfortable coding in C++ and start writing more complex programs, you should be writing your own custom functions for these simple purposes rather than depending on this library.
 
 ENJOY!
