@@ -6,4 +6,4 @@ This library is not meant to be used as a crutch for Python programmers.  Use th
 
 By the time you have gotten more comfortable coding in C++ and start writing more complex programs, you should be using built-in C++ functions or writing your own custom functions for these purposes rather than depending on this educational-use library.
 
-ENJOY!
+-- THIS PROJECT IS CURRENTLY UNDER CONSTEUCTION --
