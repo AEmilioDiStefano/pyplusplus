@@ -5,7 +5,7 @@ std::string PyFunctions::capitalize(std:: string str)
 {
   
   // Return an empty string if the input string is empty.
-  if (str.empty()) 
+  if (str.empty())
   {
     return ""; 
   }
